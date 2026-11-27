@@ -87,7 +87,7 @@ if selected == "Final Exam Score Prediction":
     # for monte-carlo simulations and prediction 
     if st.button('Predict'):
         sample = X_new.iloc[0]
-        n_simulations = 5000
+        n_simulations = 10000
         test_mean3 = sample['Exam3'] # exam3 is the most influncer/important feature
         test_std3 = test_mean3 * 0.1  # 10% standard deviation
         test_mean2 = sample['Exam2'] # exam2 is the 2nd most influncer/important feature
